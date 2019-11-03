@@ -1,22 +1,253 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Maven Pro';font-size: 18px;
+  padding:auto;
+  text-align:center;
 }
-
-.App-logo {
-  height: 40vmin;
+.progress{
+  background-color:rgb(168, 167, 167);
+  height:25px;
+  margin:5px 0;
+  transition: width 5s;
+  text-align:left;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.progress-bar-title{
+  font-size:16px;
+  position:absolute;
+  text-align: left;
+  padding-left:5px;
+}
+/*** BASIC STYLING  ***/
+#footer{
+  flex-shrink: 0;
+  margin:20px 0;
+}
+.content{
+  flex: 1 0 auto;
+}
+.container{
+  background-color:white;
+  width:60%;
+  margin:auto;
+  min-height: 100vh;;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+.left{
+  text-align:left;
+  margin:0;
 }
 
-.App-link {
-  color: #09d3ac;
+/******   SEARCH ******/
+.search{
+  margin:auto;
+  width: 100%;
+  padding:10px 0;
 }
+
+.headerButton{
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border:none;
+  cursor: pointer;
+  overflow:hidden;
+  border-radius: 10px;
+  padding: 3px 10px 0 10px;
+  margin:0px 5px;
+}
+.headerButton:hover{
+  background-color:rgb(219, 219, 219);
+}
+.pokedexNum {
+  color: grey;
+  font-size:24px
+}
+.row.header{
+  padding:50px;
+}
+
+/*********   Profile Section   ***********/
+.profileImg{
+  text-align: center;;
+}
+.wrap2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.sectionTitle{
+  border-radius:5px;
+  padding-left:10px;
+  margin-top:20px;
+  text-align:left;
+}
+
+.row.profile{
+  max-width: 100%;
+  border-radius: 5px;
+  margin:0;
+  padding-bottom:20px;
+}
+.profileTitle{
+  margin:10px;
+  color:white;
+  text-align: center;
+  font-size:20px
+}
+.profileContent{
+  font-size: 17px;
+  color:black;
+}
+
+.ulParent > ul{
+  display:inline-block
+}
+.ulParent> ul > li{
+  text-align: left;
+}
+
+/********     EVOLUTION   **********/
+.evolDesc{
+  background-repeat: repeat;
+  margin:auto;
+  margin-top:10px;
+  padding-bottom: 50px;
+  border-radius:5px;
+  width:100%;
+}
+.evolList{
+  padding:20px 0;
+  margin-top:5%;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.evolItems{
+  background-color: #F2F2F2;
+  margin:1% 1%;
+  min-width: 200px;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  height: 200px;
+  border-radius: 50%;
+}
+/***********   Pokemon Type   ***********/
+#wrapper{
+  margin: 0 auto;
+  text-align: center;
+}
+.type{
+  margin:5px 8px;
+  padding:8px;
+  width:100px;
+  border-radius: 5px;
+  display:inline-block;
+}
+.stat{
+  background-color: rgba(240, 240, 240, 0.897);
+  border-radius: 5px;
+  padding:10px 5px 20px 5px;
+}
+
+#normal{
+  color:white;
+  background-color:#A8A77A;
+}
+#fire{
+  color:white;
+  background-color: #EE8130;
+}
+#water{
+  color:white;
+  background-color: #6390F0;
+}
+#electric{
+  color:white;
+  background-color: #F7D02C;
+}
+#grass{
+  color:white;
+  background-color: #7AC74C;
+}
+#ice{
+  color:white;
+  background-color: #96D9D6;
+}
+#fighting{
+  color:white;
+  background-color: #C22E28;
+}
+#poison{
+  color:white;
+  background-color: #A33EA1;
+}
+#ground{
+  color:white;
+  background-color: #E2BF65;
+}
+#flying{
+  color:white;
+  background-color: #A98FF3;
+}
+#psychic{
+  color:white;
+  background-color: #F95587;
+}
+#bug{
+  color:white;
+  background-color: #A6B91A;
+}
+#rock{
+  color:white;
+  background-color: #B6A136;
+}
+#ghost{
+  color:white;
+  background-color: #735797;
+}
+#dragon{
+  color:white;
+  background-color: #6F35FC;
+}
+#dark{
+  color:white;
+  background-color: #705746;
+}
+#steel{
+  color:white;
+  background-color: #B7B7CE;
+}
+#fairy{
+  color:white;
+  background-color: #D685AD;
+}
+
+/******     END OF POKEMON TYPE     *****/
+
+/***
+ * Responsive Section
+***/
+@media screen and (max-width: 768px) {
+  .container{
+    width:80%;
+    margin:auto;
+  }
+  .evolList{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sectionTitle{
+    text-align: center;
+  }
+}
+
