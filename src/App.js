@@ -21,7 +21,14 @@ export class App extends Component {
       isError: false,
     };
   }
-  
+  /******
+   * IMPORTANT
+   * 
+   * Use POKEMON-SPECIES/741 INSTEAD OF POKEMON/741... Name is different
+   * pokemon-species.id = 741
+   * varieties[0].pokemon.url;
+   * 
+   */
   fetchAPI = (name) => {
     this.setState({isLoading: true, isError:false})
     //Fetching API for POKEMON
@@ -65,6 +72,9 @@ export class App extends Component {
   searchPoke = (name) => {
     this.fetchAPI(name);
   }
+  /* evolPokemon = (name) => {
+    this.searchPoke(name);
+  } */
   
   //Renders first and then it goes to didMount
   render() {

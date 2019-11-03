@@ -34,7 +34,7 @@ export class Evolution extends Component {
     }
 
     handle = (ar) =>{
-        this.props.evolPokemon(ar);
+        this.props.searchPoke(ar);
     }
 
     getOneType(){
